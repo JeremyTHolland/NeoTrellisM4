@@ -35,14 +35,16 @@ Usage Example
 
 To use Trellis as 2 Neotrellis (seesaw):
 
-.. code-block:: python
+.. code-block:: python3
+
     from neotrellism4 import NeoTrellisM4
     trellis_left = NeoTrellisM4()
     trellis_right = NeoTrellisM4(left_part=trellis_left)
 
 To use TrellisM4 tilled with Neotrellis (seesaw):
 
-.. code-block:: python
+.. code-block:: python3
+
     from board import SCL, SDA
     import busio
     from adafruit_neotrellis.neotrellism4 import NeoTrellisM4
