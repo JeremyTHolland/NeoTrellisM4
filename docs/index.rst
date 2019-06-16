@@ -26,9 +26,8 @@ Table of Contents
 .. toctree::
     :caption: Related Products
 
-    * `Adafruit TrellisM4 Express board <https://www.adafruit.com/product/3938>`_
-    * `Adafruit Neotrellis <https://www.adafruit.com/product/3954>`_
-    * `Silicon Elastomer 4x4 button keypad <https://www.adafruit.com/product/1611>`_
+    Adafruit TrellisM4 Express board <https://www.adafruit.com/product/3938>
+    Adafruit Neotrellis <https://www.adafruit.com/product/3954>
 
 .. toctree::
     :caption: Other Links
