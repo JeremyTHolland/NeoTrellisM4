@@ -9,8 +9,8 @@ Introduction
     :target: https://discord.gg/nBQh6qu
     :alt: Discord
 
-.. image:: https://travis-ci.com/arofarn/Circuitpython_CircuitPython_NeoTrellisM4.svg?branch=master
-    :target: https://travis-ci.com/arofarn/Circuitpython_CircuitPython_NeoTrellisM4
+.. image:: https://travis-ci.org/arofarn/NeoTrellisM4.svg?branch=master
+    :target: https://travis-ci.org/arofarn/NeoTrellisM4
     :alt: Build Status
 
 Use Adafruit TrellisM4 Express board as 2 Neotrellis board. You can you use this to extend TrellisM4 with Neotrellis (seesaw) boards.
