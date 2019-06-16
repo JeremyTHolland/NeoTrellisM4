@@ -2,5 +2,5 @@ Adafruit-Blinka
 adafruit-circuitpython-busdevice
 Adafruit_CircuitPython_NeoPixel
 adafruit_seesaw
-adafruit_matrixkeypad
-adafruit_neotrellis
+Adafruit_CircuitPython_MatrixKeypad
+Adafruit_CircuitPython_NeoTrellis
