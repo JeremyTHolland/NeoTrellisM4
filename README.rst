@@ -22,6 +22,9 @@ This driver depends on:
 
 * `Adafruit CircuitPython <https://github.com/adafruit/circuitpython>`_
 * `Bus Device <https://github.com/adafruit/Adafruit_CircuitPython_BusDevice>`_
+* `Adafruit Seesaw helper <https://github.com/adafruit/Adafruit_CircuitPython_seesaw>`
+* `Adafruit MatrixKeypad <https://github.com/adafruit/Adafruit_CircuitPython_MatrixKeypad>`
+* `Neopixel <https://github.com/adafruit/Adafruit_CircuitPython_NeoPixel>`
 
 Please ensure all dependencies are available on the CircuitPython filesystem.
 This is easily achieved by downloading
@@ -58,7 +61,32 @@ To install in a virtual environment in your current project:
 Usage Example
 =============
 
-.. todo:: Add a quick, simple example. It and other examples should live in the examples folder and be included in docs/examples.rst.
+To use Trellis as 2 Neotrellis (seesaw):
+.. code-block:: python3
+    from neotrellism4 import NeoTrellisM4
+
+    #create the trellis
+    trellis_left = NeoTrellisM4()
+    trellis_right = NeoTrellisM4(left_part=trellis_left)
+
+To use TrellisM4 tilled with Neotrellis (seesaw):
+.. code-block:: python3
+    from board import SCL, SDA
+    import busio
+    from adafruit_neotrellis.neotrellism4 import NeoTrellisM4
+    from adafruit_neotrellis.neotrellis import NeoTrellis
+    from adafruit_neotrellis.multitrellis import MultiTrellis
+
+    I2C = busio.I2C(SCL, SDA)
+
+    trellim4_left = NeoTrellisM4()
+    trellim4_right = NeoTrellisM4(left_part=trellim4_left)
+    trelli = [
+        [trellim4_left, trellim4_right],
+        [NeoTrellis(I2C, False, addr=0x2F), NeoTrellis(I2C, False, addr=0x2E)]
+        ]
+
+    trellis = MultiTrellis(trelli)
 
 Contributing
 ============
