@@ -3,3 +3,4 @@ adafruit-circuitpython-busdevice
 neopixel
 adafruit_seesaw
 adafruit_matrixkeypad
+adafruit_neotrellis
