@@ -23,14 +23,12 @@ Table of Contents
 .. toctree::
     :caption: Tutorials
 
-.. todo:: Add any Learn guide links here. If there are none, then simply delete this todo and leave
-    the toctree above for use later.
-
 .. toctree::
     :caption: Related Products
 
-.. todo:: Add any product links here. If there are none, then simply delete this todo and leave
-    the toctree above for use later.
+    * `Adafruit TrellisM4 Express board <https://www.adafruit.com/product/3938>`_
+    * `Adafruit Neotrellis <https://www.adafruit.com/product/3954>`_
+    * `Silicon Elastomer 4x4 button keypad <https://www.adafruit.com/product/1611>`_
 
 .. toctree::
     :caption: Other Links
