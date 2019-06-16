@@ -1,7 +1,6 @@
 import time
 
-from adafruit_neotrellis.neotrellism4 import NeoTrellisM4
-
+from neotrellism4 import NeoTrellisM4
 
 #create the trellis
 trellis_left = NeoTrellisM4()

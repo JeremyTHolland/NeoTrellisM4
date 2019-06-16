@@ -23,7 +23,8 @@
 `circuitpython_neotrellism4`
 ================================================================================
 
-Use Adafruit TrellisM4 Express board as 2 Neotrellis board. You can you use this to extend TrellisM4 with Neotrellis (seesaw) boards.
+Use Adafruit TrellisM4 Express board as 2 Neotrellis seesaw boards.
+You can you use this to extend TrellisM4 with Neotrellis (seesaw) boards.
 
 
 * Author(s): arofarn
@@ -111,7 +112,7 @@ class _TrellisNeoPixel:
         self.auto_write = current_auto_write
 
     def show(self):
-        """fill method wrapper
+        """Fill method wrapper
         """
         self.pix.show()
 

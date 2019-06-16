@@ -22,70 +22,37 @@ This driver depends on:
 
 * `Adafruit CircuitPython <https://github.com/adafruit/circuitpython>`_
 * `Bus Device <https://github.com/adafruit/Adafruit_CircuitPython_BusDevice>`_
-* `Adafruit Seesaw helper <https://github.com/adafruit/Adafruit_CircuitPython_seesaw>`
-* `Adafruit MatrixKeypad <https://github.com/adafruit/Adafruit_CircuitPython_MatrixKeypad>`
-* `Neopixel <https://github.com/adafruit/Adafruit_CircuitPython_NeoPixel>`
+* `Adafruit Seesaw helper <https://github.com/adafruit/Adafruit_CircuitPython_seesaw>`_
+* `Adafruit MatrixKeypad <https://github.com/adafruit/Adafruit_CircuitPython_MatrixKeypad>`_
+* `Neopixel <https://github.com/adafruit/Adafruit_CircuitPython_NeoPixel>`_
 
 Please ensure all dependencies are available on the CircuitPython filesystem.
 This is easily achieved by downloading
 `the Adafruit library and driver bundle <https://github.com/adafruit/Adafruit_CircuitPython_Bundle>`_.
 
-Installing from PyPI
---------------------
-.. note:: This library is not available on PyPI yet. Install documentation is included
-   as a standard element. Stay tuned for PyPI availability!
-.. todo:: Remove the above note if PyPI version is/will be available at time of release.
-   If the library is not planned for PyPI, remove the entire 'Installing from PyPI' section.
-On supported GNU/Linux systems like the Raspberry Pi, you can install the driver locally `from
-PyPI <https://pypi.org/project/adafruit-circuitpython-neotrellism4/>`_. To install for current user:
-
-.. code-block:: shell
-
-    pip3 install adafruit-circuitpython-neotrellism4
-
-To install system-wide (this may be required in some cases):
-
-.. code-block:: shell
-
-    sudo pip3 install adafruit-circuitpython-neotrellism4
-
-To install in a virtual environment in your current project:
-
-.. code-block:: shell
-
-    mkdir project-name && cd project-name
-    python3 -m venv .env
-    source .env/bin/activate
-    pip3 install adafruit-circuitpython-neotrellism4
-
 Usage Example
 =============
 
 To use Trellis as 2 Neotrellis (seesaw):
-.. code-block:: python3
+.. code-block:: python
     from neotrellism4 import NeoTrellisM4
-
-    #create the trellis
     trellis_left = NeoTrellisM4()
     trellis_right = NeoTrellisM4(left_part=trellis_left)
 
 To use TrellisM4 tilled with Neotrellis (seesaw):
-.. code-block:: python3
+.. code-block:: python
     from board import SCL, SDA
     import busio
     from adafruit_neotrellis.neotrellism4 import NeoTrellisM4
     from adafruit_neotrellis.neotrellis import NeoTrellis
     from adafruit_neotrellis.multitrellis import MultiTrellis
-
     I2C = busio.I2C(SCL, SDA)
-
     trellim4_left = NeoTrellisM4()
     trellim4_right = NeoTrellisM4(left_part=trellim4_left)
     trelli = [
         [trellim4_left, trellim4_right],
         [NeoTrellis(I2C, False, addr=0x2F), NeoTrellis(I2C, False, addr=0x2E)]
         ]
-
     trellis = MultiTrellis(trelli)
 
 Contributing

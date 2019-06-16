@@ -2,9 +2,9 @@ import time
 
 from board import SCL, SDA
 import busio
-from adafruit_neotrellis.neotrellism4 import NeoTrellisM4
 from adafruit_neotrellis.neotrellis import NeoTrellis
 from adafruit_neotrellis.multitrellis import MultiTrellis
+from neotrellism4 import NeoTrellisM4
 
 #create the i2c object for the trellis
 I2C = busio.I2C(SCL, SDA)
