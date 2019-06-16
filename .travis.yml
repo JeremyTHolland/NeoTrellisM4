@@ -44,5 +44,5 @@ install:
 script:
   - pylint neotrellism4.py
   - ([[ ! -d "examples" ]] || pylint --disable=missing-docstring,invalid-name,bad-whitespace examples/*.py)
-  - circuitpython-build-bundles --filename_prefix circuitpython-neotrellism4 --library_location .
+  - circuitpython-build-bundles --filename_prefix neotrellism4 --library_location .
   - cd docs && sphinx-build -E -W -b html . _build/html && cd ..

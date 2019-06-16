@@ -17,7 +17,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='adafruit-circuitpython-neotrellism4',
+    name='circuitpython-neotrellism4',
 
     use_scm_version=True,
     setup_requires=['setuptools_scm'],
@@ -27,16 +27,19 @@ setup(
     long_description_content_type='text/x-rst',
 
     # The project's main homepage.
-    url='https://github.com/adafruit/Adafruit_CircuitPython_NeoTrellisM4',
+    url='https://github.com/arofarn/NeoTrellisM4',
 
     # Author details
-    author='Adafruit Industries',
-    author_email='circuitpython@adafruit.com',
+    author='arofarn',
+    author_email='arofarn@arofarn.info',
 
     install_requires=[
         'Adafruit-Blinka',
         'adafruit-circuitpython-busdevice',
-        'neopixel'
+        'Adafruit_CircuitPython_NeoPixel',
+        'adafruit_seesaw',
+        'Adafruit_CircuitPython_MatrixKeypad',
+        'Adafruit_CircuitPython_NeoTrellis',
     ],
 
     # Choose your license
@@ -61,5 +64,5 @@ setup(
     # simple. Or you can use find_packages().
     # TODO: IF LIBRARY FILES ARE A PACKAGE FOLDER,
     #       CHANGE `py_modules=['...']` TO `packages=['...']`
-    py_modules=['circuitpython_neotrellism4'],
+    py_modules=['neotrellism4'],
 )
