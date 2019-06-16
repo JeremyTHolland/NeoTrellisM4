@@ -20,10 +20,10 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 """
-`circuitpython_neotrellism4`
+`neotrellism4`
 ================================================================================
 
-Use Adafruit TrellisM4 Express board as 2 Neotrellis seesaw boards.
+Use Adafruit TrellisM4 Express board as 2 Neotrellis seesaw boards with CircuitPython.
 You can you use this to extend TrellisM4 with Neotrellis (seesaw) boards.
 
 
@@ -46,7 +46,7 @@ Implementation Notes
 # imports
 
 __version__ = "0.0.0-auto.0"
-__repo__ = "https://github.com/arofarn/Circuitpython_CircuitPython_neotrellism4.git"
+__repo__ = "https://github.com/arofarn/NeoTrellisM4.git"
 
 
 import board
