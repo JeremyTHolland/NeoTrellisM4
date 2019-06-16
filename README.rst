@@ -1,8 +1,8 @@
 Introduction
 ============
 
-.. image:: https://readthedocs.org/projects/circuitpython-circuitpython-neotrellism4/badge/?version=latest
-    :target: https://circuitpython.readthedocs.io/projects/neotrellism4/en/latest/
+.. image:: https://readthedocs.org/projects/circuitpython-neotrellism4/badge/?version=latest
+    :target: https://circuitpython-neotrellism4.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
 
 .. image:: https://img.shields.io/discord/327254708534116352.svg
